@@ -1,4 +1,4 @@
-export class User {}
+export class User {
     public firstName: string;
     public lastName: string;
     public age: number;
@@ -11,25 +11,26 @@ export class User {}
         this.fullName = `${firstName} ${lastName}`;
     }
 
-    User.setFirstname(firstName: string): void {
+    setFirstname(firstName: string): void {
         this.firstName = firstName;
         this.fullName = `${this.firstName} ${this.lastName}`;
     }
 
-    User.setLastname(lastName: string): void {
+    setLastname(lastName: string): void {
         this.lastName = lastName;
         this.fullName = `${this.firstName} ${this.lastName}`;
     }
 
-    User.setAge(age: number): void {
+    setAge(age: number): void {
         this.age = age;
     }
 
-    User.getAge(): number {
+    getAge(): number {
         return this.age;
     }
 
-    User.getFullName(): string {
+    getFullName(): string {
         return this.fullName;
     }
 
+}
