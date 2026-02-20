@@ -1,5 +1,4 @@
 export class Character {}
-    
     public name: string;
     public health: number;
 
@@ -8,7 +7,12 @@ export class Character {}
         this.health = 100;
     }
 
-    getName(): string {
+    getName(): string{
         return this.name;
-
-    }   
+    }
+    getHealth(): number{
+        return this.health;
+    }
+    receiveDamage(damage: number): void{
+        this.health -= damage;
+    }
