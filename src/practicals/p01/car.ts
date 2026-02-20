@@ -1,30 +1,25 @@
-export class Car {}
-    public Brand: string;
-    public Model: string;
+export class Car {
+  public brand: string;
+  public model: string;
 
-    constructor(brand: string, model: string) {
-        this.Brand = brand;
-        this.Model = model;
-    }
-    Car.start(): void {
-        console.log(`${this.Brand} ${this.Model} is starting...`);
-    }
+  constructor() {
+    this.brand = "";
+    this.model = "";
+  }
 
-    Car.accelerate(): void {
-        console.log(`${this.Brand} ${this.Model} is accelerating...`);
-    }
+  public start(): void {
+    console.log(`${this.brand} ${this.model} is starting...`);
+  }
 
-    Car.brake(): void {
-        console.log(`${this.Brand} ${this.Model} is braking...`); 
-    }
+  public accelerate(): void {
+    console.log(`${this.brand} ${this.model} is accelerating...`);
+  }
 
-    Car.stop(): void {
-        console.log(`${this.Brand} ${this.Model} is stopping...`);
-    }   
+  public brake(): void {
+    console.log(`${this.brand} ${this.model} is braking...`);
+  }
 
-    const myCar = new Car("Toyota", "Corolla");
-    myCar.start();
-    myCar.accelerate();
-    myCar.brake();
-    myCar.stop();
-
+  public stop(): void {
+    console.log(`${this.brand} ${this.model} is stopping...`);
+  }
+}
