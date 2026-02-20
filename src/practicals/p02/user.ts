@@ -33,13 +33,3 @@ export class User {}
         return this.fullName;
     }
 
-    const user1 = new User("John", "Doe", 30);
-    console.log(user1.getFullName());
-    console.log(user1.getAge());
-    
-    user1.setFirstname("Jane");
-    user1.setLastname("Smith");
-    user1.setAge(25);
-    console.log(user1.getFullName());
-    console.log(user1.getAge());
-    
