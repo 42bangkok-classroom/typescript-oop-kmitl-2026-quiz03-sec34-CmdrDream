@@ -20,4 +20,11 @@ export class Car {}
 
     Car.stop(): void {
         console.log(`${this.Brand} ${this.Model} is stopping...`);
-    }
+    }   
+
+    const myCar = new Car("Toyota", "Corolla");
+    myCar.start();
+    myCar.accelerate();
+    myCar.brake();
+    myCar.stop();
+

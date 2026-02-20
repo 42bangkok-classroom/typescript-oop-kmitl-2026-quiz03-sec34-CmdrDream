@@ -16,3 +16,5 @@ export class Character {}
     receiveDamage(damage: number): void{
         this.health -= damage;
     }
+    console.log(`Character ${this.name} has ${this.health} health.`);
+        

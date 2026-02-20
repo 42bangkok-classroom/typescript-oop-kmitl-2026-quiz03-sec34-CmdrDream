@@ -39,3 +39,18 @@ export class OnlineCourse {}
     canEnroll(): boolean {
         return this.isOpen && this.enrolledStudents < this.maxStudents;
     }
+    
+    const course = new OnlineCourse("Introduction to TypeScript", 30);
+    console.log(course.getCourseStatus());
+    console.log(course.getAvailableSeats());
+    
+    for (let i = 0; i < 30; i++) {
+        course.enroll();
+    }
+    
+    console.log(course.getAvailableSeats());
+    console.log(course.canEnroll());
+    
+    course.closeCourse();
+    console.log(course.getCourseStatus());
+    console.log(course.canEnroll());

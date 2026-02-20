@@ -21,3 +21,5 @@ export class Warrior extends Character {
     this.health -= damage;
   }
     
+  console.log(`Warrior ${this.name} wields a ${this.weapon} and has ${this.health} health.`);
+  
