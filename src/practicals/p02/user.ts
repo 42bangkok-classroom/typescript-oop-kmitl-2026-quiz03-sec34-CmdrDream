@@ -32,5 +32,8 @@ export class User {
     getFullName(): string {
         return this.fullName;
     }
-
+    static BIRTH_YEAR = 2000;
+    static calculateBirthYear(age: number): number {
+        return new Date().getFullYear() - age;
+    }
 }
