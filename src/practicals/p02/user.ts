@@ -25,12 +25,10 @@ export class User {}
         this.age = age;
     }
 
-    User.getFullName(): string {
-        return this.fullName;
-    }
-
     User.getAge(): number {
         return this.age;
     }
 
-    static BIRTH_YEAR: number = 2000;
+    User.getFullName(): string {
+        return this.fullName;
+    }
