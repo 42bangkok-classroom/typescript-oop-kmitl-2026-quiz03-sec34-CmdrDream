@@ -22,4 +22,3 @@ export class Warrior extends Character {
   }
     
   console.log(`Warrior ${this.name} wields a ${this.weapon} and has ${this.health} health.`);
-  
