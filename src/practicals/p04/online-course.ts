@@ -36,3 +36,9 @@ export class OnlineCourse {
     return this.isOpen ? "Open" : "Closed";
   }
 }
+
+
+
+
+
+
